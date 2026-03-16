@@ -43,10 +43,10 @@
 
 ## 👾 About Me
 
-- 🔭 Currently working on ...
-- 🌱 Learning ...
-- 💬 Ask me about ...
-- 📫 Reach me at ...
+- 🔭 Currently working on ... Machine Learning Theory / Artificial Intelligence
+- 🌱 Learning ... Neural Network Robustness
+- 💬 Ask me about ... Computational Mathematics / Theoretical CS
+- 📫 Reach me at ...dayeon603@gmail.com
 
 ---
 
@@ -77,10 +77,3 @@
 
 ---
 
-<!-- ── TROPHY SHOWCASE ─────────────────────────────────────────── -->
-## 🏆 Trophies
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=YOUR_USERNAME&theme=darkhub&no-frame=true&row=1"
-       alt="Trophies"/>
-</p>
