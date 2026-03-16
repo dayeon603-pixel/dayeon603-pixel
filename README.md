@@ -18,7 +18,7 @@
 -->
 
 <p align="center">
-  <img src="./nyan-cat (4).svg" width="820" alt="Nyan Cat Banner"/>
+  <img src="./nyan-cat (fin).svg" width="820" alt="Nyan Cat Banner"/>
 </p>
 
 <!-- ── LIVE STAT BADGES (auto-updated) ───────────────────────────
