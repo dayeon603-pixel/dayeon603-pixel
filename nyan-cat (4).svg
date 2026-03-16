@@ -313,7 +313,7 @@
 <!-- tagline -->
 <text x="32" y="280"
       font-family="'Courier New',monospace" font-size="31"
-      font-weight="800" fill="#e6edf3" letter-spacing="-0.5">Code. Ship. Repeat.</text>
+      font-weight="800" fill="#e6edf3" letter-spacing="-0.5">Welcome to Dayeon's Hub</text>
 
 <!-- stat dots + labels (cosmetic — live stats are in README.md) -->
 <circle cx="32"  cy="305" r="3.5" fill="#58a6ff"/>
