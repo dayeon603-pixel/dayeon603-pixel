@@ -1,0 +1,41 @@
+name: Update Nyan Cat Banner
+
+on:
+  # Run every 6 hours
+  schedule:
+    - cron: "0 */6 * * *"
+  # Also run whenever you push to main
+  push:
+    branches: [main]
+  # Allow manual trigger from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  update-banner:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write   # needed to commit the updated SVG back
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate banner with live stats
+        env:
+          GITHUB_TOKEN:    ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USERNAME: ${{ github.repository_owner }}
+        run: python generate_banner.py
+
+      - name: Commit updated SVG (only if changed)
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add nyan-cat.svg
+          # Only commit if the file actually changed
+          git diff --cached --quiet || git commit -m "chore: update banner stats [skip ci]"
+          git push
