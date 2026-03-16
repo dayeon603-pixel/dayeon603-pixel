@@ -27,7 +27,7 @@
 
 <p align="center">
   <img height="165"
-    src="https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&theme=dark&hide_border=true&include_all_commits=true&count_private=true&show=prs_merged,prs_merged_percentage"
+    src="https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&theme=dark&hide_border=true&include_all_commits=true&count_private=true&show=prs_merged,prs_merged_percentage" 
     alt="GitHub Stats"/>
   <img height="165"
     src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_USERNAME&layout=compact&theme=dark&hide_border=true&langs_count=8"
