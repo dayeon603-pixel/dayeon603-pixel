@@ -69,11 +69,3 @@
        alt="GitHub Streak"/>
 </p>
 
-<!-- ── CONTRIBUTION GRAPH ──────────────────────────────────────── -->
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=YOUR_USERNAME&theme=github-compact&hide_border=true"
-       alt="Contribution Graph" width="820"/>
-</p>
-
----
-
