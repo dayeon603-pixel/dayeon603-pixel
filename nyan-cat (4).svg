@@ -1,0 +1,335 @@
+<!--
+  ╔══════════════════════════════════════════════════════════╗
+  ║  NYAN CAT — GitHub Profile Banner SVG                    ║
+  ║  Converted from canvas animation (github_nyancat_v8)     ║
+  ╠══════════════════════════════════════════════════════════╣
+  ║  EDIT GUIDE (open in any text editor)                    ║
+  ║  Handle  → find  @octocat                                ║
+  ║  Tagline → find  Code. Ship. Repeat.                     ║
+  ║  Speed   → change  dur="10s"  on the .nyan keyframe      ║
+  ║  Cat color → replace  #999999  (grey)                    ║
+  ╚══════════════════════════════════════════════════════════╝
+-->
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 820 320" width="820" height="320">
+<defs>
+
+  <!-- banner clip -->
+  <clipPath id="clip">
+    <rect width="820" height="320" rx="12"/>
+  </clipPath>
+
+  <!-- deep-space background -->
+  <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%"   stop-color="#030812"/>
+    <stop offset="100%" stop-color="#080f1e"/>
+  </linearGradient>
+
+  <!-- bottom text-legibility fade -->
+  <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%"   stop-color="#060b14" stop-opacity="0"/>
+    <stop offset="38%"  stop-color="#060b14" stop-opacity="0.28"/>
+    <stop offset="100%" stop-color="#060b14" stop-opacity="0.93"/>
+  </linearGradient>
+
+  <!-- reusable sparkle / star cross -->
+  <g id="starcross">
+    <line x1="0" y1="-5" x2="0" y2="5"  stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="-5" y1="0" x2="5" y2="0"  stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="-3.5" y1="-3.5" x2="3.5" y2="3.5" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="3.5" y1="-3.5" x2="-3.5" y2="3.5" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+
+  <style>
+    /*
+     * ── NYAN CAT FLIGHT ─────────────────────────────────────
+     * S = 7  (same unit as canvas code)
+     * Cat body centre starts at x=-200 (off-screen left)
+     * and travels to x=1020 (off-screen right), y fixed at 165
+     * (≈ H/2 + 5  with H=320)
+     *
+     * Change dur to adjust speed: "7s" faster, "13s" slower
+     */
+    .nyan {
+      animation: fly 10s linear infinite;
+    }
+    @keyframes fly {
+      from { transform: translate(-200px, 165px); }
+      to   { transform: translate(1040px, 165px); }
+    }
+
+    /* leg bounce — pairs alternate */
+    .la { animation: la 0.35s ease-in-out infinite alternate; }
+    .lb { animation: lb 0.35s ease-in-out infinite alternate; }
+    @keyframes la { from { transform: translateY(0px);   } to { transform: translateY(6px);  } }
+    @keyframes lb { from { transform: translateY(6px);   } to { transform: translateY(0px);  } }
+
+    /* tail wag */
+    .tail { animation: wag 0.5s ease-in-out infinite alternate; }
+    @keyframes wag { from { transform: rotate(-15deg); } to { transform: rotate(15deg); } }
+
+    /* star / sparkle twinkles */
+    .t1 { animation: twk 1.8s 0.00s ease-in-out infinite alternate; }
+    .t2 { animation: twk 2.1s 0.40s ease-in-out infinite alternate; }
+    .t3 { animation: twk 1.5s 0.80s ease-in-out infinite alternate; }
+    .t4 { animation: twk 2.3s 0.20s ease-in-out infinite alternate; }
+    .t5 { animation: twk 1.7s 1.00s ease-in-out infinite alternate; }
+    .t6 { animation: twk 2.0s 0.60s ease-in-out infinite alternate; }
+    .t7 { animation: twk 1.6s 0.30s ease-in-out infinite alternate; }
+    .t8 { animation: twk 2.4s 0.90s ease-in-out infinite alternate; }
+    .t9 { animation: twk 1.9s 1.30s ease-in-out infinite alternate; }
+    @keyframes twk { from { opacity: 0.08; } to { opacity: 0.95; } }
+  </style>
+</defs>
+
+<!-- ── background ── -->
+<rect width="820" height="320" rx="12" fill="url(#bg)"/>
+
+<!-- ── everything clipped inside banner ── -->
+<g clip-path="url(#clip)">
+
+<!-- ══════════════════ STARS ══════════════════ -->
+<!-- sparkle crosses -->
+<use href="#starcross" class="t1" transform="translate(48,30)"/>
+<use href="#starcross" class="t2" transform="translate(155,68)"/>
+<use href="#starcross" class="t3" transform="translate(285,24)"/>
+<use href="#starcross" class="t4" transform="translate(418,52)"/>
+<use href="#starcross" class="t5" transform="translate(542,32)"/>
+<use href="#starcross" class="t6" transform="translate(668,62)"/>
+<use href="#starcross" class="t7" transform="translate(765,26)"/>
+<use href="#starcross" class="t8" transform="translate(98,208)"/>
+<use href="#starcross" class="t9" transform="translate(248,228)"/>
+<use href="#starcross" class="t1" transform="translate(378,218)"/>
+<use href="#starcross" class="t3" transform="translate(502,255)"/>
+<use href="#starcross" class="t5" transform="translate(612,200)"/>
+<use href="#starcross" class="t7" transform="translate(724,238)"/>
+<use href="#starcross" class="t2" transform="translate(806,202)"/>
+<!-- dot stars -->
+<circle class="t4" cx="74"  cy="104" r="1.4" fill="white"/>
+<circle class="t6" cx="196" cy="152" r="1.2" fill="white"/>
+<circle class="t8" cx="342" cy="92"  r="1.5" fill="white"/>
+<circle class="t2" cx="464" cy="168" r="1.3" fill="white"/>
+<circle class="t1" cx="594" cy="112" r="1.4" fill="white"/>
+<circle class="t9" cx="714" cy="158" r="1.2" fill="white"/>
+<circle class="t3" cx="54"  cy="268" r="1.3" fill="white"/>
+<circle class="t5" cx="312" cy="282" r="1.1" fill="white"/>
+<circle class="t7" cx="554" cy="272" r="1.4" fill="white"/>
+<circle class="t4" cx="784" cy="278" r="1.2" fill="white"/>
+<circle class="t6" cx="128" cy="136" r="1.0" fill="white"/>
+<circle class="t8" cx="448" cy="88"  r="1.1" fill="white"/>
+<circle class="t2" cx="668" cy="240" r="1.0" fill="white"/>
+
+<!-- ══════════════════════════════════════════════════════════
+     NYAN CAT GROUP
+     ──────────────────────────────────────────────────────────
+     S = 7 px (matches canvas S=7)
+     Origin (0,0) = centre of poptart body.
+     CSS translates group to y=165 and sweeps x.
+
+     Poptart  : x = S*-3 .. S*3   = -21..21   y = S*-2.2..S*2.2 = -15.4..15.4
+     Head     : x = S*3  .. S*3+head           right of poptart
+     Tail     : left of S*-3, wags
+     Legs     : below S*2 = 14, four legs
+     Rainbow  : extends 220px left of (catX - S*3)
+     ══════════════════════════════════════════════════════════ -->
+<g class="nyan">
+
+  <!-- ── RAINBOW TRAIL ──────────────────────────────────────
+       trailLen=220, stripeH=2.5, 6 stripes
+       each stripe centred at baseOff = (i - 2.5) * 5
+       i=0 → -12.5,  i=1 → -7.5,  i=2 → -2.5
+       i=3 →  +2.5,  i=4 → +7.5,  i=5 → +12.5
+       amp=6, wave gentle sine
+       Trail starts at x = -(S*3) - 220 = -241, ends at x = -S*3 = -21
+  -->
+
+  <!-- Red   baseOff=-12.5 -->
+  <path fill="#ff0000">
+    <animate attributeName="d" dur="3.2s" repeatCount="indefinite"
+      calcMode="spline" keyTimes="0;0.5;1"
+      keySplines="0.45 0 0.55 1;0.45 0 0.55 1"
+      values="M-241,-15 C-200,-20 -160,-10 -120,-15 C-80,-20 -41,-10 -21,-15 L-21,-10 C-41,-5 -80,-15 -120,-10 C-160,-5 -200,-15 -241,-10 Z;
+              M-241,-12 C-200,-17 -160,-7  -120,-12 C-80,-17 -41,-7  -21,-12 L-21,-7  C-41,-2  -80,-12 -120,-7  C-160,-2  -200,-12 -241,-7  Z;
+              M-241,-15 C-200,-20 -160,-10 -120,-15 C-80,-20 -41,-10 -21,-15 L-21,-10 C-41,-5 -80,-15 -120,-10 C-160,-5 -200,-15 -241,-10 Z"/>
+  </path>
+
+  <!-- Orange  baseOff=-7.5 -->
+  <path fill="#ff8800">
+    <animate attributeName="d" dur="3.2s" repeatCount="indefinite"
+      calcMode="spline" keyTimes="0;0.5;1"
+      keySplines="0.45 0 0.55 1;0.45 0 0.55 1"
+      values="M-241,-10 C-200,-15 -160,-5  -120,-10 C-80,-15 -41,-5  -21,-10 L-21,-5  C-41,0   -80,-10 -120,-5  C-160,0   -200,-10 -241,-5  Z;
+              M-241,-7  C-200,-12 -160,-2  -120,-7  C-80,-12 -41,-2  -21,-7  L-21,-2  C-41,3   -80,-7  -120,-2  C-160,3   -200,-7  -241,-2  Z;
+              M-241,-10 C-200,-15 -160,-5  -120,-10 C-80,-15 -41,-5  -21,-10 L-21,-5  C-41,0   -80,-10 -120,-5  C-160,0   -200,-10 -241,-5  Z"/>
+  </path>
+
+  <!-- Yellow  baseOff=-2.5 -->
+  <path fill="#ffff00">
+    <animate attributeName="d" dur="3.2s" repeatCount="indefinite"
+      calcMode="spline" keyTimes="0;0.5;1"
+      keySplines="0.45 0 0.55 1;0.45 0 0.55 1"
+      values="M-241,-5  C-200,-10 -160,0   -120,-5  C-80,-10 -41,0   -21,-5  L-21,0   C-41,5   -80,-5  -120,0   C-160,5   -200,-5  -241,0   Z;
+              M-241,-2  C-200,-7  -160,3   -120,-2  C-80,-7  -41,3   -21,-2  L-21,3   C-41,8   -80,-2  -120,3   C-160,8   -200,-2  -241,3   Z;
+              M-241,-5  C-200,-10 -160,0   -120,-5  C-80,-10 -41,0   -21,-5  L-21,0   C-41,5   -80,-5  -120,0   C-160,5   -200,-5  -241,0   Z"/>
+  </path>
+
+  <!-- Green   baseOff=+2.5 -->
+  <path fill="#33cc33">
+    <animate attributeName="d" dur="3.2s" repeatCount="indefinite"
+      calcMode="spline" keyTimes="0;0.5;1"
+      keySplines="0.45 0 0.55 1;0.45 0 0.55 1"
+      values="M-241,0   C-200,-5  -160,5   -120,0   C-80,-5  -41,5   -21,0   L-21,5   C-41,10  -80,0   -120,5   C-160,10  -200,0   -241,5   Z;
+              M-241,3   C-200,-2  -160,8   -120,3   C-80,-2  -41,8   -21,3   L-21,8   C-41,13  -80,3   -120,8   C-160,13  -200,3   -241,8   Z;
+              M-241,0   C-200,-5  -160,5   -120,0   C-80,-5  -41,5   -21,0   L-21,5   C-41,10  -80,0   -120,5   C-160,10  -200,0   -241,5   Z"/>
+  </path>
+
+  <!-- Blue    baseOff=+7.5 -->
+  <path fill="#2288ff">
+    <animate attributeName="d" dur="3.2s" repeatCount="indefinite"
+      calcMode="spline" keyTimes="0;0.5;1"
+      keySplines="0.45 0 0.55 1;0.45 0 0.55 1"
+      values="M-241,5   C-200,0   -160,10  -120,5   C-80,0   -41,10  -21,5   L-21,10  C-41,15  -80,5   -120,10  C-160,15  -200,5   -241,10  Z;
+              M-241,8   C-200,3   -160,13  -120,8   C-80,3   -41,13  -21,8   L-21,13  C-41,18  -80,8   -120,13  C-160,18  -200,8   -241,13  Z;
+              M-241,5   C-200,0   -160,10  -120,5   C-80,0   -41,10  -21,5   L-21,10  C-41,15  -80,5   -120,10  C-160,15  -200,5   -241,10  Z"/>
+  </path>
+
+  <!-- Purple  baseOff=+12.5 -->
+  <path fill="#aa00ff">
+    <animate attributeName="d" dur="3.2s" repeatCount="indefinite"
+      calcMode="spline" keyTimes="0;0.5;1"
+      keySplines="0.45 0 0.55 1;0.45 0 0.55 1"
+      values="M-241,10  C-200,5   -160,15  -120,10  C-80,5   -41,15  -21,10  L-21,15  C-41,20  -80,10  -120,15  C-160,20  -200,10  -241,15  Z;
+              M-241,13  C-200,8   -160,18  -120,13  C-80,8   -41,18  -21,13  L-21,18  C-41,23  -80,13  -120,18  C-160,23  -200,13  -241,18  Z;
+              M-241,10  C-200,5   -160,15  -120,10  C-80,5   -41,15  -21,10  L-21,15  C-41,20  -80,10  -120,15  C-160,20  -200,10  -241,15  Z"/>
+  </path>
+
+  <!-- ── TAIL ─────────────────────────────────────────────────
+       Canvas: moveTo -S*3,-S*0.5  quadCurves up-left, wags via Math.sin
+       SVG: wag with animateTransform rotate around pivot (-21, 0)
+  -->
+  <g style="transform-box: fill-box;">
+    <path class="tail"
+          style="transform-origin: -21px -3px;"
+          d="M-21,-3 Q-36,-4 -35,-15 Q-34,-21 -29,-18 Q-32,-13 -31,-7 Q-28,1 -21,3 Z"
+          fill="#999999"/>
+  </g>
+
+  <!-- ── POPTART ──────────────────────────────────────────────
+       Canvas: S=7, x=-S*3=-21, w=S*6=42, y=-S*2.2=-15.4, h=S*4.4=30.8
+       Crust then frosting inset by S*0.6=4.2 → ~4
+  -->
+  <!-- crust -->
+  <rect x="-21" y="-16" width="42" height="31" rx="3.5" fill="#f5c98b"/>
+  <!-- frosting -->
+  <rect x="-17" y="-13" width="34" height="25" rx="2.5" fill="#ff99aa"/>
+
+  <!-- sprinkles — canvas uses rotate(PI/4) rects at scaled positions -->
+  <!-- sx*S, sy*S with small rotated rect S*0.36 × S*0.14 = 2.5 × 1 -->
+  <rect transform="translate(-10.5,-5.6) rotate(45)" x="-1.3" y="-0.5" width="2.6" height="1" rx="0.5" fill="#ff3399"/>
+  <rect transform="translate(0,-8.4)     rotate(45)" x="-1.3" y="-0.5" width="2.6" height="1" rx="0.5" fill="#00ccff"/>
+  <rect transform="translate(-3.5,2.1)   rotate(45)" x="-1.3" y="-0.5" width="2.6" height="1" rx="0.5" fill="#ffff00"/>
+  <rect transform="translate(7,-4.2)     rotate(45)" x="-1.3" y="-0.5" width="2.6" height="1" rx="0.5" fill="#ff6600"/>
+  <rect transform="translate(-12.6,3.5)  rotate(45)" x="-1.3" y="-0.5" width="2.6" height="1" rx="0.5" fill="#00ff88"/>
+  <rect transform="translate(10.5,2.8)   rotate(45)" x="-1.3" y="-0.5" width="2.6" height="1" rx="0.5" fill="#ff33ff"/>
+  <rect transform="translate(5.6,7)      rotate(45)" x="-1.3" y="-0.5" width="2.6" height="1" rx="0.5" fill="#ff3399"/>
+  <rect transform="translate(-7,7.7)     rotate(45)" x="-1.3" y="-0.5" width="2.6" height="1" rx="0.5" fill="#00ccff"/>
+
+  <!-- ── LEGS ──────────────────────────────────────────────────
+       Canvas: legXs = [-S*2, -S*0.8, S*0.5, S*1.8] = [-14,-5.6, 3.5, 12.6]
+       y = S*2.0 = 14,  w = S*0.85 = 5.95,  h ~ S*0.9 = 6.3
+       pairs: i=0,2 (la) and i=1,3 (lb)
+  -->
+  <g class="la">
+    <rect x="-14" y="14" width="6" height="7" rx="1.5" fill="#999999"/>
+    <rect x="3.5" y="14" width="6" height="7" rx="1.5" fill="#999999"/>
+  </g>
+  <g class="lb">
+    <rect x="-5.6" y="14" width="6" height="7" rx="1.5" fill="#999999"/>
+    <rect x="12.6" y="14" width="6" height="7" rx="1.5" fill="#999999"/>
+  </g>
+
+  <!-- ── CAT HEAD ─────────────────────────────────────────────
+       Canvas: hx = S*3 = 21,  hy = -S*0.6 = -4.2
+       Head rect: hx-S*1.6=-11.2+21=9.8  .. hx+S*1.6=32.2  (w=S*3.2=22.4)
+                  hy-S*1.8=-12.6-4.2=-16.8  h=S*3=21
+  -->
+  <!-- head base -->
+  <rect x="10" y="-17" width="22" height="21" rx="3.5" fill="#999999"/>
+
+  <!-- ears: canvas triangles from head top -->
+  <!-- left ear: moveTo(hx-S*0.8, hy-S*1.8)=15.4,-16.8  lineTo(hx-S*1.1,-S*3.1+hy)=13.3,-25.9  lineTo(hx-S*0.1)=20.3,-16.8 -->
+  <polygon points="15,-17 13,-26 20,-17" fill="#999999"/>
+  <!-- right ear: moveTo(hx+S*0.3)=23.1,-16.8  lineTo(hx+S*0.6,hy-S*3.1)=25.2,-25.9  lineTo(hx+S*1.4)=30.8,-16.8 -->
+  <polygon points="23,-17 25,-26 31,-17" fill="#999999"/>
+
+  <!-- inner ear pink -->
+  <polygon points="15.5,-17.5 14,-24 19.5,-17.5" fill="#ff88aa"/>
+  <polygon points="23.5,-17.5 25.5,-24 30,-17.5" fill="#ff88aa"/>
+
+  <!-- eyes: happy V arcs (canvas polylines)
+       left:  (hx-S*0.8, hy-S*0.55)=(15.4,-8.05)  peak (hx-S*0.45,-S*0.85+hy)=(18,-10.15)  (hx-S*0.1,-8.05)=20.3
+       right: (hx+S*0.15,-8.05)=22.05  peak (hx+S*0.52,-10.15)=24.64  (hx+S*0.9,-8.05)=27.3
+  -->
+  <polyline points="15,-8 18,-10 20,-8"
+            fill="none" stroke="#222222" stroke-width="1.8"
+            stroke-linecap="round" stroke-linejoin="round"/>
+  <polyline points="22,-8 25,-10 27,-8"
+            fill="none" stroke="#222222" stroke-width="1.8"
+            stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- nose: canvas ellipse at (hx+S*1.05, hy+S*0.1) = (28.35, -3.5)  rx=S*0.22=1.54  ry=S*0.17=1.19 -->
+  <ellipse cx="28" cy="-3" rx="1.5" ry="1.2" fill="#ff6688"/>
+
+  <!-- mouth: canvas polyline (hx+S*0.82, hy+S*0.25)=(26.74,-2.45) → (hx+S*1.05, hy+S*0.45)=(28.35,-1.05) → (hx+S*1.28,-2.45)=30 -->
+  <polyline points="27,2 28,3.5 30,2"
+            fill="none" stroke="#222222" stroke-width="1.3"
+            stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- whiskers right: canvas hx+S*1.3=30.1  → hx+S*2.4=37.8
+       line1 hy-S*0.15=-5.25 → hy-S*0.35=-6.65
+       line2 hy+S*0.05=-3.85 → hy+S*0.05
+       line3 hy-S*0.15=-5.25 → hy+S*0.15=-3.15 -->
+  <line x1="30" y1="-5" x2="38" y2="-7"  stroke="#333" stroke-width="0.9" stroke-linecap="round"/>
+  <line x1="30" y1="-4" x2="38" y2="-4"  stroke="#333" stroke-width="0.9" stroke-linecap="round"/>
+  <line x1="30" y1="-3" x2="38" y2="-1"  stroke="#333" stroke-width="0.9" stroke-linecap="round"/>
+
+  <!-- whiskers left: hx-S*1.0=14  → hx-S*1.9=7.1 -->
+  <line x1="14" y1="-5" x2="6"  y2="-7"  stroke="#333" stroke-width="0.9" stroke-linecap="round"/>
+  <line x1="14" y1="-4" x2="6"  y2="-4"  stroke="#333" stroke-width="0.9" stroke-linecap="round"/>
+  <line x1="14" y1="-3" x2="6"  y2="-1"  stroke="#333" stroke-width="0.9" stroke-linecap="round"/>
+
+</g><!-- /nyan -->
+
+<!-- text fade overlay -->
+<rect width="820" height="320" rx="12" fill="url(#fade)"/>
+
+<!-- ══════════ TEXT — EDIT THESE ══════════ -->
+
+<!-- your GitHub handle -->
+<text x="32" y="248"
+      font-family="'Courier New',monospace" font-size="13"
+      fill="#58a6ff" opacity="0.85" letter-spacing="1.2">@octocat</text>
+
+<!-- tagline -->
+<text x="32" y="280"
+      font-family="'Courier New',monospace" font-size="31"
+      font-weight="800" fill="#e6edf3" letter-spacing="-0.5">Code. Ship. Repeat.</text>
+
+<!-- stat dots + labels (cosmetic — live stats are in README.md) -->
+<circle cx="32"  cy="305" r="3.5" fill="#58a6ff"/>
+<text x="41"  y="309" font-family="'Courier New',monospace" font-size="11.5" fill="#7d8590">commits</text>
+
+<circle cx="112" cy="305" r="3.5" fill="#3fb950"/>
+<text x="121" y="309" font-family="'Courier New',monospace" font-size="11.5" fill="#7d8590">PRs merged</text>
+
+<circle cx="224" cy="305" r="3.5" fill="#d2a8ff"/>
+<text x="233" y="309" font-family="'Courier New',monospace" font-size="11.5" fill="#7d8590">repos</text>
+
+<!-- active badge -->
+<rect x="716" y="14" width="90" height="24" rx="12"
+      fill="rgba(35,134,54,0.12)" stroke="#238636" stroke-width="1"/>
+<circle cx="730" cy="26" r="3.5" fill="#3fb950"/>
+<text x="737" y="30" font-family="'Courier New',monospace" font-size="11" fill="#3fb950">Active</text>
+
+</g><!-- /clip -->
+</svg>
