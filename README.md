@@ -11,9 +11,9 @@
 
 ## 🌌 About Me
 
-🔭 Currently working on quantitative finance models, AI research (SPS), and global SDG platforms
-🌱 Learning advanced ML, statistical inference, and system design for real-world impact
-💬 Ask me about AI/ML, quant, research frameworks, or scaling ideas into products
-📫 Reach me at [dayeon603@gmail.com]
+-🔭 Currently working on quantitative finance models, AI research (SPS), and global SDG platforms
+-🌱 Learning advanced ML, statistical inference, and system design for real-world impact
+-💬 Ask me about AI/ML, quant, research frameworks, or scaling ideas into products
+-📫 Reach me at [dayeon603@gmail.com]
 
 
