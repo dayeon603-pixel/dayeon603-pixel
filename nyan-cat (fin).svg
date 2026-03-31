@@ -4,7 +4,7 @@
   ║  Converted from canvas animation (github_nyancat_v8)     ║
   ╠══════════════════════════════════════════════════════════╣
   ║  EDIT GUIDE (open in any text editor)                    ║
-  ║  Handle  → find  @octocat                                ║
+  ║  Handle  → find  @dayeon603-pixel                        ║
   ║  Tagline → find  Code. Ship. Repeat.                     ║
   ║  Speed   → change  dur="10s"  on the .nyan keyframe      ║
   ║  Cat color → replace  #999999  (grey)                    ║
@@ -308,7 +308,7 @@
 <!-- your GitHub handle -->
 <text x="32" y="248"
       font-family="'Courier New',monospace" font-size="13"
-      fill="#58a6ff" opacity="0.85" letter-spacing="1.2">@octocat</text>
+      fill="#58a6ff" opacity="0.85" letter-spacing="1.2">@dayeon603-pixel</text>
 
 <!-- tagline -->
 <text x="32" y="280"
