@@ -27,18 +27,6 @@
   <img height="165"
     src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_USERNAME&layout=compact&theme=dark&hide_border=true&langs_count=8"
     alt="Top Languages"/>
-</p>
-
-<p align="center">
-  <img src="https://streak-stats.demolab.com?user=YOUR_USERNAME&theme=dark&hide_border=true"
-       alt="GitHub Streak"/>
-</p>
-
-<p align="center">
-  <img width="820"
-    src="https://github-readme-activity-graph.vercel.app/graph?username=YOUR_USERNAME&theme=github-compact&hide_border=true&area=true"
-    alt="Contribution Graph"/>
-</p>
 
 ---
 
