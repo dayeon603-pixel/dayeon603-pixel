@@ -5,12 +5,7 @@
 
 <br/>
 
-<!-- ── LIVE BADGES (update instantly from GitHub API) ── -->
-<p align="center">
-  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FYOUR_USERNAME&query=%24.public_repos&label=%F0%9F%93%A6%20repos&color=58a6ff&style=flat-square" alt="Repos"/>
-  <img src="https://img.shields.io/github/followers/YOUR_USERNAME?label=%F0%9F%91%A5%20followers&style=flat-square&color=3fb950" alt="Followers"/>
-  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FYOUR_USERNAME&query=%24.following&label=%F0%9F%91%A3%20following&color=d2a8ff&style=flat-square" alt="Following"/>
-</p>
+
 
 ---
 
