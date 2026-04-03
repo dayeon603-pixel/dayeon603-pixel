@@ -85,13 +85,13 @@ GQL = f"""
 }}
 """
 try:
-    gdata = gh_graphql(gql)["data"]["user"]
+    gdata = gh_graphql(GQL)["data"]["user"]
     contrib = gdata["contributionsCollection"]
-    commits    = contrib["totalCommitContributions"]
+    commits = contrib["totalCommitContributions"]
     prs_merged = gdata["pullRequests"]["totalCount"]
-except Exception as e:
+except (KeyError, TypeError) as e:
     print(f"  GraphQL warn: {e} — falling back to 0")
-    commits    = 0
+    commits = 0
     prs_merged = 0
 
 print(f"  repos:      {public_repos}")
