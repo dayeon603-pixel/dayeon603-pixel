@@ -70,7 +70,8 @@ while True:
     page += 1
 
 # 3. Total commits + PRs merged via GraphQL (includes private if token has scope)
-gql = f"""
+Rename to GQL
+GQL = f"""
 {{
   user(login: "{USERNAME}") {{
     contributionsCollection {{
@@ -83,7 +84,6 @@ gql = f"""
     }}
   }}
 }}
-"""
 try:
     gdata = gh_graphql(gql)["data"]["user"]
     contrib = gdata["contributionsCollection"]
