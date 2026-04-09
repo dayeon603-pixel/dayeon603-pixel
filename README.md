@@ -11,7 +11,7 @@
 
 ## 🌌 About Me
 
-- 🔭 Currently working on quantitative finance models, AI research (SPS), and global SDG platforms
+- 🔭 Currently working on quantitative finance models, AI research (SPS), multilingual neuroprosthetics, and global SDG platforms
 
 - 🌱 Learning advanced ML, statistical inference, and system design for real-world impact
 
