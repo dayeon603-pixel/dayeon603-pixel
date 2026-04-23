@@ -11,7 +11,7 @@
 
 ## 🌌 About Me
 
-- 🔭 Flagship: NeuroVoice — cortical-signal-to-text across 100+ languages on a $152 hardware stack, resolving low-SNR instability for ALS/SCI patients                                                                                      
+- 🔭 Flagship: NeuroVoice — cortical-signal-to-text across 25+ languages on a $152 hardware stack, resolving low-SNR instability for ALS/SCI patients                                                                                      
 - ⚙️  Hardware/Quant: AirTouch (mid-air ultrasonic haptics), AlphaNexus (GARCH/HMM/Monte Carlo with latent-state redesign)                                                   
 
 - 🧠 AI Research: metaMirage (LLM metacognition, DeepMind × Kaggle AGI 2026), SPS (transformer semantic stability), VERITAS + Project Angel (AI reliability under adversarial stress)
